@@ -20,7 +20,6 @@ ul li {
   padding: 12px 8px 12px 40px;
   background: #eee;
   font-size: 18px;
-  transition: 0.2s;
   list-style: none;
 }
 
@@ -32,11 +31,16 @@ ul li:nth-child(odd) {
 ul li:hover {
   background: #ddd;
 }
+h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
 
 .header {
+  margin-top: 20px;
   width: 300px;
   margin-left: 30px;
-  background-color: #f44336;
+  background-color: #f40a10;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -52,7 +56,8 @@ ul li:hover {
 }
 
 .close:hover {
-  background-color: #f44336;
+  background-color: #f40a10;
+
   color: white;
 }
 
@@ -62,25 +67,32 @@ input {
   width: 65%;
   padding: 10px;
   font-size: 16px;
-  margin-right: 5px;
+  /*margin-right: 5px;*/
 }
 
 .addButton {
-  display: inline-block;
-  padding: 10px;
-  width: 15%;
-  height: 23px;
-  background: #d9d9d9;
-  color: #555;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    width: 60px;
+    height: 43px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
 
 }
 
+/*.addButton:hover{*/
+    /*font-size: 18px;*/
+    /*font-weight: bold;*/
+/*}*/
+
 ul li.checked {
     background: #888;
-    color: #fff;
+    color: #15ff46;
     text-decoration: line-through;
 }
 
@@ -88,7 +100,7 @@ ul li.checked {
 ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #15ff46;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
